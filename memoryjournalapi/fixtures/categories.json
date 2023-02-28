@@ -1,0 +1,37 @@
+[
+  {
+      "model": "memoryjournalapi.Categories",
+      "PK": 1,
+      "fields": {
+          "category_name": "Travel"
+      }
+  },
+  {
+      "model": "memoryjournalapi.Categories",
+      "PK": 2,
+      "fields": {
+          "category_name": "Experience"
+      }
+  },
+  {
+      "model": "memoryjournalapi.Categories",
+      "PK": 3,
+      "fields": {
+          "label": "BucketList"
+      }
+  },
+  {
+      "model": "memoryjournalapi.Categories",
+      "PK": 4,
+      "fields": {
+          "label": "Food"
+      }
+  },
+  {
+    "model": "memoryjournalapi.Categories",
+    "PK": 5,
+    "fields": {
+        "label": "Undetermined"
+    }
+}
+]

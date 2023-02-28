@@ -1,0 +1,22 @@
+[
+  {
+    "model": "memoryjournalapi.Inspiration_Article",
+    "pk": 1,
+    "fields": {
+      "title": "125 Fun And Crazy Bucket List Ideas For Teenagers, In 2023",
+      "description": "Teenagers have their set of things they want to do. Many families have the tradition of making bucket lists for everyone in the family. These bucket list ideas for teens often include traveling with friends, creating something new, and most ideas that interest them. They are fun, and your teen will love doing them with you, with their friends, and by themselves.",
+      "item_image": "https://www.momjunction.com/articles/teen-bucket-list-ideas_00763433/",
+      "user_id": 1
+    }
+  },
+  {
+    "model": "memoryjournalapi.inspiration_article",
+    "pk": 2,
+    "fields": {
+      "title": "250 Bucket List Ideas: Incredible Things To Do Before You Die",
+      "description": "Creating a good bucket list is really important, no matter how old you are. It helps you decide what you want out of life and motivates you to achieve your dreams. If you need a little help getting started, a literal kick up the bum before kicking the bucket, here are 250 cool bucket list ideas you should add to your list.",
+      "item_image": "https://trulyexperiences.com/blog/bucket-list-ideas/",
+      "user_id": 1
+    }
+  }
+]

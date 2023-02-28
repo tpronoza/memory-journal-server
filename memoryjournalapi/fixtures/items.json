@@ -1,0 +1,20 @@
+[
+  {
+    "model": "memoryjournalapi.Item",
+    "pk": 1,
+    "fields": {
+      "user_id": 1,
+      "description": "Hunt the Northern Lights",
+      "item_image": "https://trulyexperiences.com/blog/wp-content/uploads/2020/05/jonatan-pie-3l3RwQdHRHg-unsplash-842x562.jpg"
+    }
+  },
+  {
+    "model": "memoryjournalapi.Item",
+    "pk": 2,
+    "fields": {
+      "user_id": 1,
+      "description": "Visit The Great Pyramid of Giza in Egypt",
+      "item_image": "https://trulyexperiences.com/blog/wp-content/uploads/2020/05/anastasiia-voitenko-n-2xrKnbJiY-unsplash-842x631.jpg"
+    }
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+      "model": "memoryjournalapi.List_Items",
+      "PK": 1,
+      "fields": {
+          "list": 1,
+          "item": 1
+      }
+  },
+  {
+      "model": "memoryjournalapi.List_Items",
+      "PK": 2,
+      "fields": {
+          "list": 1,
+          "item": 2
+      }
+  }
+]
