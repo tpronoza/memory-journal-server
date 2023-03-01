@@ -1,34 +1,34 @@
 [
   {
-      "model": "memoryjournalapi.Categories",
+      "model": "memoryjournalapi.Category",
       "PK": 1,
       "fields": {
-          "category_name": "Travel"
+          "label": "Travel"
       }
   },
   {
-      "model": "memoryjournalapi.Categories",
+      "model": "memoryjournalapi.Category",
       "PK": 2,
       "fields": {
-          "category_name": "Experience"
+          "label": "Experience"
       }
   },
   {
-      "model": "memoryjournalapi.Categories",
+      "model": "memoryjournalapi.Category",
       "PK": 3,
       "fields": {
           "label": "BucketList"
       }
   },
   {
-      "model": "memoryjournalapi.Categories",
+      "model": "memoryjournalapi.Category",
       "PK": 4,
       "fields": {
           "label": "Food"
       }
   },
   {
-    "model": "memoryjournalapi.Categories",
+    "model": "memoryjournalapi.Category",
     "PK": 5,
     "fields": {
         "label": "Undetermined"

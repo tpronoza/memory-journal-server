@@ -9,16 +9,21 @@ class ListItemView(ViewSet):
     def list(self, request):
 
         list_items = List_Item.objects.all()
-        list_user = request.query_params.get('user', None)
-        if list_user is not None:
-            list_items.filter(user=list_user)
+        # list_user = request.query_params.get('user', None)
+        # if list_user is not None:
+        #     list_items.filter(user=list_user)
+            
+        list_item = request.query_params.get('item', None)
+        if list_item is not None:
+            games = games.filter(list_item_id=list_item)
+        
         serializer = ListItemSerializer(list_items, many=True)
         return Response(serializer.data)
 
     def create(self, request):
 
-        list = List.objects.get(pk=request.data['list_id'])
-        item = Item.objects.get(pk=request.data['item_id'])
+        list = List.objects.get(pk=request.data['list'])
+        item = Item.objects.get(pk=request.data['item'])
 
         list_item = List_Item.objects.create(
             list=list,
