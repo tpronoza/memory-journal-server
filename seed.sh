@@ -10,7 +10,7 @@ python3 manage.py makemigrations memoryjournalapi
 python3 manage.py migrate memoryjournalapi
 
 python3 manage.py loaddata user
-python3 manage.py loaddata categories
+python3 manage.py loaddata category
 python3 manage.py loaddata items
 python3 manage.py loaddata lists
 python3 manage.py loaddata list_items

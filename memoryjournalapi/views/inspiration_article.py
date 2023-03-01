@@ -16,7 +16,7 @@ class InspirationArticleView(ViewSet):
         return Response(serializer.data)
 
     def create(self, request):
-        user = User.objects.get(pk=request.data["user_id"])
+        user = User.objects.get(pk=request.data["user"])
 
         inspiration_article = Inspiration_Article.objects.create(
             title=request.data["title"],
@@ -29,7 +29,7 @@ class InspirationArticleView(ViewSet):
 
     def update(self, request, pk):
 
-        user = User.objects.get(pk=request.data["user_id"])
+        user = User.objects.get(pk=request.data["user"])
 
         inspiration_article = Inspiration_Article.objects.get(pk=pk)
         inspiration_article.title=request.data["title"]
@@ -49,5 +49,5 @@ class InspirationArticleSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Inspiration_Article
-        fields = ('id', 'title', 'description', 'image_url', 'user')
+        fields = ('id', 'title', 'description', 'item_image', 'user')
         depth = 1

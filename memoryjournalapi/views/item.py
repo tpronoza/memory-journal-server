@@ -16,7 +16,7 @@ class ItemView(ViewSet):
         return Response(serializer.data)
 
     def create(self, request):
-        user = User.objects.get(pk=request.data["user_id"])
+        user = User.objects.get(pk=request.data["user"])
 
         item = Item.objects.create(
             description=request.data["description"],
@@ -28,7 +28,7 @@ class ItemView(ViewSet):
 
     def update(self, request, pk):
 
-        user = User.objects.get(pk=request.data["user_id"])
+        user = User.objects.get(pk=request.data["user"])
 
         item = Item.objects.get(pk=pk)
         item.description=request.data["description"]
@@ -47,5 +47,5 @@ class ItemSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Item
-        fields = ('id', 'description', 'item_image', 'user')
+        fields = ('id', 'description', 'image_url', 'user')
         depth = 1

@@ -1,11 +1,11 @@
 [
   {
-      "model": "wineadventureapi.User",
+      "model": "memoryjournalapi.User",
       "PK": 1,
       "fields": {
           "first_name": "Tatiana",
           "last_name": "Taty",
-          "user_image": "https://img.freepik.com/premium-photo/cute-ragdoll-cat-with-beautiful-blue-eyes-lying-floor-home-closeup-portrait-breed-feline-pet-indoors-beautiful-purebred-domestic-animal_156881-6763.jpg",
+          "image_url": "https://img.freepik.com/premium-photo/cute-ragdoll-cat-with-beautiful-blue-eyes-lying-floor-home-closeup-portrait-breed-feline-pet-indoors-beautiful-purebred-domestic-animal_156881-6763.jpg",
           "email": "taty@taty.com",
           "uid": "2qYJO5aTOvZTURupchEOWfUkr1Y2"
       }

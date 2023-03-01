@@ -1,7 +1,7 @@
 from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
-from memoryjournalapi.models import List, User
+from memoryjournalapi.models import List, User, Category
 
 class ListView(ViewSet):
 
@@ -16,28 +16,31 @@ class ListView(ViewSet):
         return Response(serializer.data)
 
     def create(self, request):
-        user = User.objects.get(pk=request.data["user_id"])
+        user = User.objects.get(pk=request.data["user"])
+        category = Category.objects.get(pk=request.data["category"])
 
         list = List.objects.create(
             title=request.data["title"],
             image_url=request.data["image_url"],
             description=request.data["description"],
-            stats=request.data["stats"],
-            user=user
+            status=request.data["status"],
+            user=user,
+            category=category
         )
         serializer = ListSerializer(list)
         return Response(serializer.data)
 
     def update(self, request, pk):
 
-        user = User.objects.get(pk=request.data["user_id"])
+        user = User.objects.get(pk=request.data["user"])
+        category = Category.objects.get(pk=request.data["category"])
 
         list = List.objects.get(pk=pk)
+        list.category=category
         list.title=request.data["title"]
-        list.image_url=request.data["image_url"],
+        list.image_url=request.data["image_url"]
         list.description=request.data["description"]
         list.status=request.data["status"]
-        # item.user=user
         list.save()
 
         return Response(None, status=status.HTTP_204_NO_CONTENT)
@@ -51,5 +54,5 @@ class ListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = List
-        fields = ('id', 'title', 'image_url', 'description', 'status')
+        fields = ('id', 'title', 'image_url', 'description', 'status', 'user', 'category')
         depth = 1
