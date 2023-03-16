@@ -20,5 +20,5 @@ class UserView(ViewSet):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ('id', 'first_name', 'last_name', 'image_url', 'email')
+        fields = ('id', 'first_name', 'last_name', 'image_url', 'email', 'uid')
         # depth = 2

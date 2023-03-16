@@ -9,5 +9,27 @@
           "email": "taty@taty.com",
           "uid": "2qYJO5aTOvZTURupchEOWfUkr1Y2"
       }
+  },
+  {
+    "model": "memoryjournalapi.User",
+    "PK": 2,
+    "fields": {
+        "first_name": "Tatiana",
+        "last_name": "Taty",
+        "image_url": "https://img.freepik.com/premium-photo/cute-ragdoll-cat-with-beautiful-blue-eyes-lying-floor-home-closeup-portrait-breed-feline-pet-indoors-beautiful-purebred-domestic-animal_156881-6763.jpg",
+        "email": "tpronoza1@gmail.com",
+        "uid": "HntlUpuekmSvtJyW04G0zunHHB72"
+    }
+  },
+  {
+    "model": "memoryjournalapi.User",
+    "PK": 3,
+    "fields": {
+        "first_name": "Tatiana",
+        "last_name": "Taty",
+        "image_url": "https://img.freepik.com/premium-photo/cute-ragdoll-cat-with-beautiful-blue-eyes-lying-floor-home-closeup-portrait-breed-feline-pet-indoors-beautiful-purebred-domestic-animal_156881-6763.jpg",
+        "email": "tatiana@gmail.com",
+        "uid": "BJ6yteDkX9O2GB9fnQgzsqaw9uq2"
+    }
   }
 ]

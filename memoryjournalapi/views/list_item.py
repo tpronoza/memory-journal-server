@@ -3,6 +3,7 @@ from rest_framework.viewsets import ViewSet
 from rest_framework.response import Response
 from rest_framework import serializers, status
 from memoryjournalapi.models import User, List_Item, List, Item
+from memoryjournalapi.serializers import ListSerializer, ListItemSerializer
 
 class ListItemView(ViewSet):
 
@@ -21,7 +22,6 @@ class ListItemView(ViewSet):
         return Response(serializer.data)
 
     def create(self, request):
-
         list = List.objects.get(pk=request.data['list'])
         item = Item.objects.get(pk=request.data['item'])
 

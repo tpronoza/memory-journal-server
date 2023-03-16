@@ -9,12 +9,19 @@ class List(models.Model):
     title = models.CharField(max_length=50)
     image_url = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
-    status = models.BooleanField()
+    # status = models.BooleanField()
 
     @property
-    def item_list(self):
-        return self.__item_list
+    def myList(self):
+      myList = []
+      for list in self.user_listitem.all():
+          myList.append(list)
+      return myList
+  
+    # @property
+    # def item_list(self):
+    #     return self.__item_list
 
-    @item_list.setter
-    def item_list(self, value):
-        self.__item_list=value
+    # @item_list.setter
+    # def item_list(self, value):
+    #     self.__item_list=value

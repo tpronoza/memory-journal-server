@@ -1,17 +1,17 @@
 from django.contrib import admin
 from django.urls import path
-from memoryjournalapi.views import register_user, check_user
+from memoryjournalapi.views import register_user, check_user, ListView, ItemView, InspirationArticleView, CategoryView, ListItemView, UserView
 from django.conf.urls import include
 from rest_framework import routers
-from memoryjournalapi.views import ListView, ItemView, InspirationArticleView, CategoryView, ListItemView, UserView
+
 
 router = routers.DefaultRouter(trailing_slash=False)
-router.register(r'lists', ListView, 'lists')
-router.register(r'items', ItemView, 'items')
-router.register(r'listitems', ListItemView, 'listitems')
-router.register(r'categories', CategoryView, 'categories')
-router.register(r'inspirationarticles', InspirationArticleView, 'inspirationarticles')
-router.register(r'user', UserView, 'user')
+router.register(r'lists', ListView, 'list')
+router.register(r'items', ItemView, 'item')
+router.register(r'listitems', ListItemView, 'listitem')
+router.register(r'categories', CategoryView, 'category')
+router.register(r'inspirationarticles', InspirationArticleView, 'inspirationarticle')
+router.register(r'users', UserView, 'user')
 
 urlpatterns = [
     path('register', register_user),

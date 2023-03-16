@@ -5,7 +5,6 @@
     "fields": {
       "user_id": 1,
       "title": "Bucket List",
-      "status": true,
       "description": "Bucket List",
       "category_id": 3
     }
@@ -16,7 +15,6 @@
     "fields": {
       "user_id": 1,
       "title": "Things to Do 2023",
-      "status": true,
       "description": "2023",
       "category_id": 2
     }
