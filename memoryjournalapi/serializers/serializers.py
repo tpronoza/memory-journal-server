@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from memoryjournalapi.models import List, List_Item
+from memoryjournalapi.models import List, List_Item, Item
 
 class ListItemSerializer(serializers.ModelSerializer):
     """words"""
@@ -13,4 +13,10 @@ class ListSerializer(serializers.ModelSerializer):
     myList = ListItemSerializer(many=True)
     class Meta:
         model = List
-        fields = ('id', 'user', 'category', 'title', 'image_url', 'description', 'myList')
+        fields = ('id', 'user', 'name', 'image', 'description', 'myList', 'items')
+        
+class ItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Item
+        fields = ('id', 'name', 'description', 'image', 'user')
+        depth = 2

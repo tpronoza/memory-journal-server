@@ -3,7 +3,7 @@
 # Place the code below in the file.
 
 #!/bin/bash
-rm -rf memoryjournal/migrations
+rm -rf memoryjournalapi/migrations
 rm db.sqlite3
 python3 manage.py migrate
 python3 manage.py makemigrations memoryjournalapi

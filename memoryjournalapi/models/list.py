@@ -5,18 +5,19 @@ from memoryjournalapi.models import Category, User
 class List(models.Model):
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    category = models.ForeignKey(Category, on_delete=models.CASCADE)
-    title = models.CharField(max_length=50)
-    image_url = models.CharField(max_length=100)
+    # category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    name = models.CharField(max_length=50)
+    image = models.CharField(max_length=100)
     description = models.CharField(max_length=100)
+    items = models.ManyToManyField("Item", through="List_Item")
     # status = models.BooleanField()
 
-    @property
-    def myList(self):
-      myList = []
-      for list in self.user_listitem.all():
-          myList.append(list)
-      return myList
+    # @property
+    # def myList(self):
+    #   myList = []
+    #   for list in self.user_listitem.all():
+    #       myList.append(list)
+    #   return myList
   
     # @property
     # def item_list(self):

@@ -4,8 +4,9 @@
     "pk": 1,
     "fields": {
       "user_id": 1,
+      "name": "Northern Lights",
       "description": "Hunt the Northern Lights",
-      "image_url": "https://trulyexperiences.com/blog/wp-content/uploads/2020/05/jonatan-pie-3l3RwQdHRHg-unsplash-842x562.jpg"
+      "image": "https://trulyexperiences.com/blog/wp-content/uploads/2020/05/jonatan-pie-3l3RwQdHRHg-unsplash-842x562.jpg"
     }
   },
   {
@@ -13,8 +14,19 @@
     "pk": 2,
     "fields": {
       "user_id": 1,
+      "name": "Egypt",
       "description": "Visit The Great Pyramid of Giza in Egypt",
-      "image_url": "https://trulyexperiences.com/blog/wp-content/uploads/2020/05/anastasiia-voitenko-n-2xrKnbJiY-unsplash-842x631.jpg"
+      "image": "https://trulyexperiences.com/blog/wp-content/uploads/2020/05/anastasiia-voitenko-n-2xrKnbJiY-unsplash-842x631.jpg"
+    }
+  },
+  {
+    "model": "memoryjournalapi.Item",
+    "pk": 3,
+    "fields": {
+      "user_id": 1,
+      "name": "Dubai",
+      "description": "Visit Dubai",
+      "image": "https://trulyexperiences.com/blog/wp-content/uploads/2020/05/anastasiia-voitenko-n-2xrKnbJiY-unsplash-842x631.jpg"
     }
   }
 ]

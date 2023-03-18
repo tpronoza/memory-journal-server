@@ -11,8 +11,16 @@
       "model": "memoryjournalapi.List_Item",
       "PK": 2,
       "fields": {
-          "list": 1,
-          "item": 1
+          "list": 2,
+          "item": 2
       }
-  }
+  },
+  {
+    "model": "memoryjournalapi.List_Item",
+    "PK": 3,
+    "fields": {
+        "list": 1,
+        "item": 1
+    }
+}
 ]
