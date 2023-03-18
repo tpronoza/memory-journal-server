@@ -13,7 +13,7 @@ def check_user(request):
             'id': user.id,
             'first_name': user.first_name,
             'last_name': user.last_name,
-            'image_url': user.image_url,
+            'image': user.image,
             'email': user.email,
             'uid': user.uid,
         }
@@ -28,7 +28,7 @@ def register_user(request):
     user = User.objects.create(
         first_name=request.data['first_name'],
         last_name=request.data['last_name'],
-        image_url=request.data['image_url'],
+        image=request.data['image'],
         email=request.data['email'],
         uid=request.data['uid']
     )
@@ -37,7 +37,7 @@ def register_user(request):
         'id': user.id,
         'first_name': user.first_name,
         'last_name': user.last_name,
-        'image_url': user.image_url,
+        'image': user.image,
         'email': user.email,
         'uid': user.uid,
     }

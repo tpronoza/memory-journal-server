@@ -4,9 +4,9 @@
     "pk": 1,
     "fields": {
       "user_id": 1,
-      "title": "Bucket List",
-      "description": "Bucket List",
-      "category_id": 3
+      "image": "https://prod-virtuoso.dotcmscloud.com/dA/188da7ea-f44f-4b9c-92f9-6a65064021c1/heroImage1/PowerfulReasons_hero.jpg",
+      "name": "Bucket List",
+      "description": "Must Do"
     }
   },
   {
@@ -14,9 +14,19 @@
     "pk": 2,
     "fields": {
       "user_id": 1,
-      "title": "Things to Do 2023",
-      "description": "2023",
-      "category_id": 2
+      "image": "https://prod-virtuoso.dotcmscloud.com/dA/188da7ea-f44f-4b9c-92f9-6a65064021c1/heroImage1/PowerfulReasons_hero.jpg",
+      "name": "Things to Do 2023 Winter",
+      "description": "Winter Fun"
+    }
+  },
+  {
+    "model": "memoryjournalapi.List",
+    "pk": 3,
+    "fields": {
+      "user_id": 1,
+      "image": "https://prod-virtuoso.dotcmscloud.com/dA/188da7ea-f44f-4b9c-92f9-6a65064021c1/heroImage1/PowerfulReasons_hero.jpg",
+      "name": "Things to Do 2023 Summer",
+      "description": "Summer Fun"
     }
   }
 ]
