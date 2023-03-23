@@ -1,6 +1,6 @@
 
 from django.db import models
-from memoryjournalapi.models import Category, User
+from memoryjournalapi.models import User
 
 class List(models.Model):
 
